@@ -45,7 +45,6 @@ def hit?(total)
     prompt_user
     input = get_user_input
    until input == 'h' || input == 's'
-<<<<<<< HEAD
       invalid_command
       input = get_user_input
     end
@@ -53,16 +52,6 @@ def hit?(total)
     total+=deal_card
   elsif input=='s'
     total
-=======
-    if input=='h'
-      total+=deal_card
-    elsif input=='s'
-      total
-    else
-      invalid_command
-      input = get_user_input
-    end
->>>>>>> 48255f59d79ee2338a56aed633b5626a137d8102
   end
 end
 
@@ -78,7 +67,6 @@ end
 
 def runner
   # code runner here
-<<<<<<< HEAD
   welcome
   score=initial_round
   score=hit?(score)
@@ -87,20 +75,5 @@ def runner
   score=hit?(score)
   end
     end_game(score)
-=======
-  binding.pry
-  welcome
-  score=initial_round
-  newScore=hit?(score)
-    until score!=newScore
-      newScore=hit?(score)
-    end
-  if newScore>21
-  end_game(newScore)
-  end
-    
-  
-  
->>>>>>> 48255f59d79ee2338a56aed633b5626a137d8102
 end
     
