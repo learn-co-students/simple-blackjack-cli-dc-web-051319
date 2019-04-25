@@ -69,10 +69,9 @@ def runner
   # code runner here
   welcome
   score=initial_round
-  score=hit?(score)
-  display_card_total(score)
   until score>21
   score=hit?(score)
+  display_card_total(score)
   end
     end_game(score)
 end
